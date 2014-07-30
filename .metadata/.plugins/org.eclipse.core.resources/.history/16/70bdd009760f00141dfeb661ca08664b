@@ -1,0 +1,19 @@
+import java.util.*;
+public class Practice {
+	
+	public static void main (String [] args) {
+		Scanner sc = new Scanner (System.in);
+		System.out.print("Enter a number: ");
+		int nbr = sc.nextInt();
+		int f = factorial(nbr);
+		System.out.println("F(nbr) = "+f);
+	}
+	
+	public static int factorial(int n) {
+		if (n == 0) return 1;
+		else return n*factorial(n-1);
+	}
+	
+	
+
+}

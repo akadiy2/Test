@@ -1,0 +1,33 @@
+import java.util.*;
+public class Practice {
+	
+	public static void main (String [] args) {
+		int nbr = 324;
+		ArrayList <Integer> l = primesBeforeNbr(nbr);
+		System.out.println(l);
+		
+		
+	}
+	
+	public static ArrayList <Integer> primesBeforeNbr(int n) {
+		ArrayList <Integer> list = new ArrayList <Integer> ();
+		
+		while (n >= 2) {
+			if (n == 5) list.add(n);
+			if (n == 3) list.add(n);
+			if (n == 2) list.add(n);
+			if (n%2!=0 && n%3!=0 && n%5!=0) {
+				
+				list.add(n);
+			}
+			
+			n--;
+		}
+		return list;
+	}
+	
+	
+	
+	
+
+}
