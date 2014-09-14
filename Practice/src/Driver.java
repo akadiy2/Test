@@ -5,6 +5,11 @@ public class Driver {
 	
 	public static void main (String [] args) {
 		
+		Pair <Integer, Double> p;
+		
+		OrderedPair <Integer, Integer> op = new OrderedPair(4,5);
+		System.out.println(op);
+		
 		Map <String, Integer> m1 = new HashMap <String, Integer> ();
 		Map <Integer, ArrayList <Integer>> m2 = new HashMap <Integer, ArrayList <Integer>>();
 		ArrayList <Integer> list = new ArrayList <Integer> ();
@@ -17,9 +22,6 @@ public class Driver {
 		
 		printMapContents(m1);
 		printMapContents(m2);
-		
-		
-		
 		
 	}
 	
